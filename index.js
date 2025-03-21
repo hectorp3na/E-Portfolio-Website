@@ -2,6 +2,8 @@
 // service_n3wdw77
 // fAObXu_2oKBt1NaXA
 
+
+
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector('.modal__overlay--loading');
@@ -23,4 +25,13 @@ function contact(event) {
         "The email service is temporarily unavailable. Please contatct me directly at hectorpena6590@gmail.com"
     )
    });
+    }
+
+    function toggleMode() {
+        if (isModalOpen) {
+            isModalOpen = false;
+            return document.body.classList.remove("modal--open")
+        }
+        isModalOpen = true;
+        document.body.classList += " moodal--open";
     }
