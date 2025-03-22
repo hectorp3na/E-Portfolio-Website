@@ -2,7 +2,7 @@
 // service_n3wdw77
 // fAObXu_2oKBt1NaXA
 
-
+let isModalOpen = false;
 
 function contact(event) {
   event.preventDefault();
