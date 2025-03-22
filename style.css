@@ -31,6 +31,7 @@ button {
 
 section {
   background-color: rgb(245, 245, 245);
+  transition: all 300ms ease;
 }
 
 input, textarea {
@@ -125,6 +126,49 @@ input:focus, textarea:focus {
 .link__hover-effect:hover:after {
     left: 0;
     width: 100%;
+}
+
+nav,
+.scroll,
+.header {
+    opacity: 1;
+    visibility: visible;
+    transition: all 600ms 800ms;
+}
+
+.modal--open nav,
+.modal--open .scroll,
+.modal--open .header {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 400ms;
+}
+
+.dark-theme .title,
+.dark-theme .section__title,
+.dark-theme .section__sub-title,
+.dark-theme .nav__link--anchor,
+.dark-theme .fa-adjust,
+.dark-theme .header__para
+{
+   color: white;
+}
+.dark-theme section {
+    background-color: #242424;
+}
+.dark-theme #personal-logo {
+    filter: none;
+}
+.dark-theme .scroll__icon {
+    border-color: white;
+}
+.dark-theme .scroll__icon:after,
+.dark-theme .link__hover-effect--black:after{
+    background-color: white;
+}
+.dark-theme .mail__btn {
+    background-color: white;
+    color: #242424;
 }
 
 
@@ -277,7 +321,7 @@ MODAL
     height: 700px;
     border-radius: 20px;
     overflow: hidden;
-    display: none;
+    display: flex;
     visibility: hidden;
     z-index: -1;
     transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
@@ -300,8 +344,8 @@ MODAL
     transition: all 300ms ease-in;
 }
 
-.modal__open .modal__about, 
-.modal__open .modal__contact {
+.modal--open .modal__about, 
+.modal--open .modal__contact {
     transform: translateX(0%);
 }
 

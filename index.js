@@ -2,6 +2,19 @@
 // service_n3wdw77
 // fAObXu_2oKBt1NaXA
 
+let contrastToggle = false;
+
+function toggleContrast() {
+    contarstToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList += " dark-theme"
+    }
+    else {
+        document.body.classList.remove("dark-theme")
+    }
+    document.body.classList += " dark-theme"
+}
+
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector('.modal__overlay--loading');
