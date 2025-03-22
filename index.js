@@ -2,8 +2,6 @@
 // service_n3wdw77
 // fAObXu_2oKBt1NaXA
 
-let isModalOpen = false;
-
 function contact(event) {
   event.preventDefault();
   const loading = document.querySelector('.modal__overlay--loading');
@@ -27,10 +25,11 @@ function contact(event) {
    });
     }
 
+    let isModalOpen = false;
     function toggleModal() {
         if (isModalOpen) {
             isModalOpen = false;
-            return document.body.classList.remove("modal--open")
+            return document.body.classList.remove("modal--open");
         }
         isModalOpen = true;
         document.body.classList += " modal--open";
