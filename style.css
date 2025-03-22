@@ -395,10 +395,6 @@ MODAL
     font-size: 80px;
 }
 
-.modal__overlay--visible {
-    z-index: 1;
-}
-
 .modal__overlay--success {
     background-color: #4bb543;
     font-size: 40px;
@@ -406,6 +402,10 @@ MODAL
     text-align: center;
     padding: 28px;
     z-index: -1;
+}
+
+.modal__overlay--visible {
+    z-index: 1;
 }
 
 .fa-spinner {
