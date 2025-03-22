@@ -27,11 +27,11 @@ function contact(event) {
    });
     }
 
-    function toggleMode() {
+    function toggleModal() {
         if (isModalOpen) {
             isModalOpen = false;
             return document.body.classList.remove("modal--open")
         }
         isModalOpen = true;
-        document.body.classList += " moodal--open";
+        document.body.classList += " modal--open";
     }
