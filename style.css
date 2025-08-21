@@ -68,7 +68,7 @@ input:focus, textarea:focus {
 
 
 .container {
-  padding: 50px 0;
+  padding: 20px 0;
   width: 100%;
 }
 
@@ -628,7 +628,6 @@ footer {
     position: relative;
     background-color: #242424;
     display: flex;
-    padding: 6% 0;
 }
 
 .footer__row {
